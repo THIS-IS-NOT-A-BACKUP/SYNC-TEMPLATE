@@ -1,5 +1,5 @@
 # Sync-Template
-
+```yaml
 # This is a basic workflow to help you get started with Actions
 
 name: Sync Upstream
@@ -24,3 +24,4 @@ jobs:
           upstream_repo: ${{ env.UPSTREAM_URL }}
           branch: ${{ env.DOWNSTREAM_BRANCH }}
           token: ${{ secrets.GITHUB_TOKEN }}
+```
