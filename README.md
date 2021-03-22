@@ -1,5 +1,5 @@
 ```yaml
-# This runs every day on 1800 UTC
+# This runs every day on 1801 UTC
 
 name: Sync Upstream
 
