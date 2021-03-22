@@ -1,5 +1,5 @@
 ```yaml
-# This is a basic workflow to help you get started with Actions
+# This runs every day on 1800 UTC
 
 name: Sync Upstream
 
