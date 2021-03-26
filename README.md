@@ -4,7 +4,7 @@
 name: Sync Upstream
 
 env:
-  UPSTREAM_URL: "https://github.com/FFmpeg/FFmpeg.git"
+  UPSTREAM_URL: "https://github.com/<repo>.git"
   DOWNSTREAM_BRANCH: "master"
 # Controls when the action will run.
 on:
