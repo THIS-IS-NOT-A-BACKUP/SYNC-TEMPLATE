@@ -1,4 +1,5 @@
 ```yaml
+# Template to sync with upstream
 name: Sync Upstream
 
 env:
