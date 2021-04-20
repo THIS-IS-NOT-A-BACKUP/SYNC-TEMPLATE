@@ -5,6 +5,9 @@ name: Sync Upstream
 env:
   # Required, URL to upstream (fork base)
   UPSTREAM_URL: "https://github.com/<usr>/<repo>.git"
+  # Required, token to authenticate bot, could use ${{ secrets.GITHUB_TOKEN }} 
+  # Over here, we use a PAT instead to authenticate workflow file changes.
+  WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
   # Optional, defaults to main
   UPSTREAM_BRANCH: "main"
   # Optional, defaults to UPSTREAM_BRANCH
@@ -33,7 +36,7 @@ jobs:
           upstream_repo: ${{ env.UPSTREAM_URL }}
           upstream_branch: ${{ env.UPSTREAM_BRANCH }}
           downstream_branch: ${{ env.DOWNSTREAM_BRANCH }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ env.WORKFLOW_TOKEN }}
           merge_args: ${{ env.MERGE_ARGS }}
           push_args: ${{ env.PUSH_ARGS }}
 ```
