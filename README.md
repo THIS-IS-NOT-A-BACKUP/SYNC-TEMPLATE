@@ -9,7 +9,7 @@ env:
   # Over here, we use a PAT instead to authenticate workflow file changes.
   WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
   # Optional, defaults to main
-  UPSTREAM_BRANCH: "main"
+  UPSTREAM_BRANCH: "master"
   # Optional, defaults to UPSTREAM_BRANCH
   DOWNSTREAM_BRANCH: ""
   # Optional merge arguments
